@@ -37,8 +37,6 @@ estilo), colocar os itens da lista em linha e também colocarmos ele na direita 
 .menu ul {
     width: 100%;
     /* Faz com que a lista ocupe 100% da tela */
-    float: right;
-    /* coloca os elementos na direita do site */
 }
 
 .menu ul li {
@@ -106,9 +104,34 @@ e também a linha abaixo da palavra quando ele passar o mouse, então, vamos usa
 /* Agora vamos editar a imagem para que ela não quebre o site */
 #inicio img {
     display: block;
-    width: 100%;
+    width: 90%;
     height: auto;
+    margin: auto;
+    /* margin: auto serve para centralizarmos a imagem no centro da div em que ela está */
     margin-top: -120px;
     /* Precisamos colocar a imagem mais para cima, e para podermos fazer isso, temos que usar um margin-top, só que com valores negativos,
     assim ela vai ir pegar o espaçamento que demos antes de 250px e diminuir em 120px, mas somente para a imagem */
+}
+
+/* Agora vamos começar a seção de sobre, colocando o mesmo espaçametno da seção anterior, ou seja, 250 por 100, então vamos lá,
+só que para esse, no lugar de padding, vamos usar margin */
+#sobre {
+    padding: 250px 100px;
+}
+
+/* Agora, como dito antes, vamos usar a tag span para podermos dar uma cor e um destaque diferente no text */
+#sobre span {
+    color: lightgreen
+}
+
+#sobre img {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: -120px;
+    border-radius: 50%;
+    /* Como podemos ver são praticamente as mesmas configurações da imagem do álbum, a única diferença é que ela ocupa um espaço menor, 
+    com largura menor e altura pré-definida, além disso, ela possui um arredondamente da borda de 50%, que usamos para deixar a imagem
+    na forma de circulo que aparece no site */
 }
