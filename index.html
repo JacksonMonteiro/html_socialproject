@@ -7,7 +7,7 @@ e mostrado para as pessoas que acessarem ao site -->
         <meta charset="UTF-8">
         <title> Site - Projeto Social - Artista Independente </title> 
         <!-- Aqui nos vamos importar o CSS que vamos criar em outro arquivo, que é a forma mais recomendada -->
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" type="text/css" href="estilo.css">
     </head>
     <body>
         <!-- 
@@ -47,14 +47,14 @@ e mostrado para as pessoas que acessarem ao site -->
                 <a href="https://www.youtube.com/playlist?list=PLg0wFprM4xZPjpb1L7ujrtxKBdfcJLid9" target="_blank"><strong>Ouvir no YouTube</strong></a>
             </div>
             <div class="direita">
-                <img src="album.jpg" alt="Foto do Álbum">
+                <img src="imagens/album.jpg" alt="Foto do Álbum">
             </div>
         </div>
         
         <div id="sobre">
             <!-- vamos colocar as divs de direta e esquerda para podermos organizar o conteúdo -->
             <div class="esquerda">
-                <img src="perfil.jpg" alt="Foto do Artista - GordoVisk">
+                <img src="imagens/perfil.jpg" alt="Foto do Artista - GordoVisk">
             </div>
             <div class="direita">
                 <p>
@@ -66,6 +66,28 @@ e mostrado para as pessoas que acessarem ao site -->
                     com diferentes referências e o melhor da música de Fortal pra você ouvir agora, então não espera muito, <span>desce mais um pouco
                     e vai conferir as músicas mais ouvidas do nosso artista</span>.
                 </p>
+            </div>
+        </div>
+
+        <div id="musicas">
+            <h1>As músicas mais acessadas</h1>
+
+            <!-- Vamos criar uma classe chamada "musica" para poder padronizar o estilo das divs que vão conter, cada uma, a thumbnail da música, a quantidade de visualizações e um botão para ouvir a música no YouTube -->
+
+            <div class="musica">
+                <img src="imagens/futuro.jpg" alt="Thumbnail da música Futuro">
+                <div>181 visualizações</div>
+                <a href="https://www.youtube.com/watch?v=zwPqH14iDHQ" target="_blank">Ouvir no YouTube</a>
+            </div>
+            <div class="musica">
+                <img src="imagens/baby.jpg" alt="Thumbnail da música Baby">
+                <div>116 visualizações</div>
+                <a href="https://www.youtube.com/watch?v=iA7RDxRXMPs" target="_blank">Ouvir no YouTube</a>
+            </div>
+            <div class="musica">
+                <img src="imagens/terra_do_sol.jpg" alt="Thumbnail da música Terra do Sol">
+                <div>95 visualizações</div>
+                <a href="https://www.youtube.com/watch?v=GsXR-A0rtVk" target="_blank">Ouvir no YouTube</a>
             </div>
         </div>
     </body>

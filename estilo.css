@@ -135,3 +135,49 @@ só que para esse, no lugar de padding, vamos usar margin */
     com largura menor e altura pré-definida, além disso, ela possui um arredondamente da borda de 50%, que usamos para deixar a imagem
     na forma de circulo que aparece no site */
 }
+
+/* Passaremos agora para a seção de músicas mais acessadas. Aqui nós colocaremos um espaçamento um pouco menor para que esta não fique tão afastada da anterior. Além disso, adicionaremos o "text-align: center" para que o conteúdo fique centralizado. */
+
+#musicas {
+    padding: 150px 100px;
+    text-align: center;
+}
+
+/* Colocaremos uma mergem embaixo do título para separá-lo dos vídeos. */
+
+#musicas h1 {
+    margin-bottom: 20px;
+}
+
+/* Vamos fazer com que as divs de cada música ocupe apenas 30% da largura da seção, assim poderemos fazer-las ficarem lado a lado com o "display: inline-block". Também colocaremos uma margem de 15px no lado esquerdo e direito de cada div musica.  */
+
+.musica {
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+}
+
+.musica img {
+    width: 100%;
+}
+
+/* Aqui colocaremos uma margem de 10px embaixo da imagem e da contagem de visualizações. Assim, a imagem não ficará colada às visualizações, e esta não ficará colada ao botão para o YouTube. */
+
+.musica img, .musica div {
+    margin-bottom: 10px;
+}
+
+/* Para o botão "Ouvir no YouTube" manteremos o mesmo estilo do botão presente na seção início, mas com um tamanho menor. */
+
+.musica a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 12px;
+}
+
+.musica a:hover {
+    text-decoration: underline;
+    background-color: crimson;
+}
