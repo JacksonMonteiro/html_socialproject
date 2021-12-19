@@ -1,0 +1,59 @@
+/* Esse é o nosso arquivo em CSS, e para começarmos ele vamos começar tirando as margens e paddings de todos os elementos! Para escolhermos
+todos os elementos usamos um asterisco para falar pro CSS que queremos selecionar tudo no site  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Agora vamos mexer no corpo do site, na tag <body></body>. Nelas vamos definir o tamanho da fonte, e o tipo de fonte que vamos usar, para 
+usarmos uma fonte diferente, vamos usar a fonte Verdana para diferenciar, e com o tamanho 14 pixels */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    /* Também vamos definir a cor de fundo do site, e a cor das letras, nesse caso, fundo preto e letra branca */
+    background-color: black;
+    color: white;
+
+    /* Ao longo do site teremos a cor verde em algumas letras, e vamos usar o elemento span para aplicarmos ela */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    /* Links não são tratados como textos, então eles não ficam brancos quando colocamos a cor que queremos no body, então, para não termos
+    que digitar várias vezes que o link tem que ser branco, vamos deixar essa configuração logo no começo, e também vamos tirar
+    a linha que fica abaixo dos links com a propriedade text-decoration */
+}
+
+/* Agora vamos começar a criar o menu, então temos que definir o tamanho que vai ter a div menu (vamos usar a classe para darmos
+estilo), colocar os itens da lista em linha e também colocarmos ele na direita do site */
+
+.menu {
+    width: 100%;
+    /* Assim ela vai ocupar toda a tela */
+}
+
+.menu ul {
+    float: right;
+    /* coloca os elementos na direita do site */
+}
+
+.menu ul li {
+    display: inline;
+    /* Deixa os itens em linha */
+}
+
+.menu ul li a {
+    display: inline-block;
+    /* Coloca os links em linha, mas com propriedades de bloco, assim facilita nós estilizarmos eles */
+    padding: 20px;
+    /* Dá espaço de 20px para cima, para baixo,  para esquerda e para a direita */
+}
+
+.menu ul li a:hover {
+    color: lightgreen;
+}
+
+/* O hover serve para colocarmos uma propriedade no elemento quando o mouse está em cima, nesse caso, queremos que o link verde quando 
+o mouse passar por ele */
