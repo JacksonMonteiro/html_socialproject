@@ -27,5 +27,28 @@ e mostrado para as pessoas que acessarem ao site -->
                 <li><a href="#descubra">Descubra</a></li> 
             </ul>
         </div>
+
+        <!-- Agora vamos a fazer div de início, nela teremos um título, um breve texto sobre o artista, quase um subtítulo, e 
+        também um link que leva para o YouTube com as músicas dele, tudo isso do lado esquerdo. No lado direito, nós termos
+        uma imagem do álbum mais recente do artista -->
+        <div id="inicio">
+            <!-- Essas são as divs que ficarão os conteúdos, com as classes direita e esquerda para podermos usar elas de novo em 
+            outras partes do site para facilitar a diagramação do conteúdo  -->
+            <div class="esquerda">
+                <h1>Seja bem-vindo a Área 51</h1>
+                <p>
+                    Primeiro álbum de muitos, feito com toda dedicação e carinho por Fortal e pelo Nordeste, nele tô trazendo vários estilos
+                    musicas e uns feat daquele jeito pra você morrer de ouvir fazendo, até porque, com o que trap não combina? 
+                </p>
+                
+                <!-- Vamos criar um botão com texto em negrito, podemos fazer isso em CSS, mas para aplicarmos o que estudamos sobre
+                textos em HTML, vamos utilizar a tag strong dentro do link. O link também precisa abrir em outra aba, e para que o link
+                faça isso, basta usarmos o atributo target, com valor _blank -->
+                <a href="https://www.youtube.com/playlist?list=PLg0wFprM4xZPjpb1L7ujrtxKBdfcJLid9" target="_blank"><strong>Ouvir no YouTube</strong></a>
+            </div>
+            <div class="direita">
+                <img src="album.jpg" alt="Foto do Álbum">
+            </div>
+        </div>
     </body>
 </html>

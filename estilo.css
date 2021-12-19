@@ -31,16 +31,19 @@ estilo), colocar os itens da lista em linha e também colocarmos ele na direita 
 
 .menu {
     width: 100%;
-    /* Assim ela vai ocupar toda a tela */
+    /* Assim ela vai ocupar toda a tela, mas também precisamos fazer isso para a lista */
 }
 
 .menu ul {
+    width: 100%;
+    /* Faz com que a lista ocupe 100% da tela */
     float: right;
     /* coloca os elementos na direita do site */
 }
 
 .menu ul li {
     display: inline;
+    float: right;
     /* Deixa os itens em linha */
 }
 
@@ -57,3 +60,55 @@ estilo), colocar os itens da lista em linha e também colocarmos ele na direita 
 
 /* O hover serve para colocarmos uma propriedade no elemento quando o mouse está em cima, nesse caso, queremos que o link verde quando 
 o mouse passar por ele */
+
+/* Vamos Colocar as divs esquerda e direita cada uma para o seu lugar, e fazer com que cada uma ocupe metade da tela */
+.esquerda {
+    float: left;
+    width: 50%;
+}
+
+.direita {
+    float: right;
+    width: 50%;
+}
+
+
+#inicio {
+    padding: 250px 100px;
+    /* Pro conteúdo não ficar colado em nenhuma borda, vamos dar um espaço de 250px em cima e abaixo, e 100px para esquerda e para a direita */
+}
+
+/* Vamos dar uma espaço do título e das outras coisas, e também vamos criar o estilo do link que envia pro spotify, e sobre o espaço,
+vamos aplicar um novo conhecimento, que é aplicar estilo em mais de um elemento, e para fazermos isso, basta colocarmos uma vírgula 
+e outro elemento que queremos o mesmo estilo */
+#inicio h1, #inicio p {
+    margin-bottom: 20px;
+}
+
+/* Agora vamos editar o botão que leva o usuário para ouvir o álbum no YouTube */
+#inicio a {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 100px;
+    border-radius: 12px;
+    /* Lembra das bordas? A propriedade que acabamos de usar serve para deixarmos ela arrendoda, então, colocamos um arredondamento de 
+    12px na borda do botão */
+}
+
+/* Para colocarmos um efeito que mostra ao usuário que ele está em cima do botão, vamos colocar um vermelho mais escuro no botão, 
+e também a linha abaixo da palavra quando ele passar o mouse, então, vamos usar o hover */ 
+#inicio a:hover {
+    text-decoration: underline;
+    background-color: crimson;
+}
+
+/* Agora vamos editar a imagem para que ela não quebre o site */
+#inicio img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: -120px;
+    /* Precisamos colocar a imagem mais para cima, e para podermos fazer isso, temos que usar um margin-top, só que com valores negativos,
+    assim ela vai ir pegar o espaçamento que demos antes de 250px e diminuir em 120px, mas somente para a imagem */
+}
