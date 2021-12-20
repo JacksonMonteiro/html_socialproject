@@ -181,3 +181,59 @@ só que para esse, no lugar de padding, vamos usar margin */
     text-decoration: underline;
     background-color: crimson;
 }
+
+/* Vamos agora fazer estilizar a seção descubra. Precisaremos novamente ajustar o espaçamento em relação a seção anterior para que as duas não fiquem muito distantes. Teremos também que centralizar os botões. */
+
+#descubra {
+    padding: 30px 100px 100px;
+    /* Quando colocamos um terceiro valor o padding funciona assim "padding: [top] [left e right] [bottom];" */
+    text-align: center;
+}
+
+#descubra h1 {
+    margin-bottom: 20px;
+}
+
+/* Faremos os botões com estilo similar aos outros que aparecem na página, mas com diferenças de tamanho e espaçamento. */
+
+#descubra a {
+    display: block;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 12px;
+    margin: 0 auto 15px;
+    width: 35%;
+}
+
+/* Agora teremos que colorir os botões com cores diferentes para cada um. É claro que também precisaremos definir um hover com cor diferente para cada botão. */
+
+#youtube {
+    background-color: red;
+}
+#youtube:hover {
+    background-color: crimson;
+    text-decoration: underline;    
+}
+
+#spotify {
+    background-color: darkgreen;
+}
+#spotify:hover {
+    background-color: forestgreen;
+    text-decoration: underline;    
+}
+
+#instagram {
+    background-color: deeppink;
+}
+#instagram:hover {
+    background-color: hotpink;
+    text-decoration: underline;    
+}
+
+/* Finalizamos o nosso CSS com o rodapé. Aqui nós centralizamos o conteúdo e definimos um espaçamento em relação à úlima seção. */
+
+#rodape {
+    text-align: center;
+    padding: 40px 0;
+}
