@@ -136,14 +136,15 @@ só que para esse, no lugar de padding, vamos usar margin */
     na forma de circulo que aparece no site */
 }
 
-/* Passaremos agora para a seção de músicas mais acessadas. Aqui nós colocaremos um espaçamento um pouco menor para que esta não fique tão afastada da anterior. Além disso, adicionaremos o "text-align: center" para que o conteúdo fique centralizado. */
+/* Passaremos agora para a seção de músicas mais acessadas. Aqui nós colocaremos um espaçamento um pouco menor na div para que esta não fique tão afastada da anterior. Além disso, adicionaremos o "text-align: center" para que o conteúdo fique centralizado. */
 
 #musicas {
     padding: 150px 100px;
     text-align: center;
+    /* Apesar do nome, o atributo "text-align" não serve apenas para alinhar texto. É possível alinhar qualquer elemento inline da página. No nosso caso, usaremos para alinhar as divs com a classe ".musica" que estarão com um "display: inline-block". */
 }
 
-/* Colocaremos uma mergem embaixo do título para separá-lo dos vídeos. */
+/* Colocaremos uma margem embaixo do título para separá-lo das divs das músicas. */
 
 #musicas h1 {
     margin-bottom: 20px;
@@ -157,11 +158,13 @@ só que para esse, no lugar de padding, vamos usar margin */
     margin: 0 15px;
 }
 
+/* Temos que definir a largura das imagens como 100%. Isso é necessário para que as imagens não fiquem maior que as divs em que estão.  */
+
 .musica img {
     width: 100%;
 }
 
-/* Aqui colocaremos uma margem de 10px embaixo da imagem e da contagem de visualizações. Assim, a imagem não ficará colada às visualizações, e esta não ficará colada ao botão para o YouTube. */
+/* Aqui colocaremos uma margem de 10px embaixo da imagem e da contagem de visualizações. Assim, a imagem não ficará colada às visualizações, e as visualizações não ficarão coladas ao botão para YouTube. */
 
 .musica img, .musica div {
     margin-bottom: 10px;
@@ -182,19 +185,21 @@ só que para esse, no lugar de padding, vamos usar margin */
     background-color: crimson;
 }
 
-/* Vamos agora fazer estilizar a seção descubra. Precisaremos novamente ajustar o espaçamento em relação a seção anterior para que as duas não fiquem muito distantes. Teremos também que centralizar os botões. */
+/* Vamos agora estilizar a seção descubra. Precisaremos novamente ajustar o espaçamento em relação a seção anterior para que as duas não fiquem muito distantes. Teremos também que centralizar os botões. */
 
 #descubra {
     padding: 30px 100px 100px;
-    /* Quando colocamos um terceiro valor o padding funciona assim "padding: [top] [left e right] [bottom];" */
+    /* Quando colocamos um terceiro valor, o padding funciona assim "padding: [top] [left e right] [bottom];" */
     text-align: center;
 }
+
+/* Colocaremos uma margem embaixo do título para separa-lo dos botôes. */
 
 #descubra h1 {
     margin-bottom: 20px;
 }
 
-/* Faremos os botões com estilo similar aos outros que aparecem na página, mas com diferenças de tamanho e espaçamento. */
+/* Faremos os botões com formato similar aos outros que aparecem na página, mas com diferenças de tamanho e espaçamento, incluindo uma margem de 15px entre os botões. */
 
 #descubra a {
     display: block;
@@ -202,6 +207,7 @@ só que para esse, no lugar de padding, vamos usar margin */
     padding: 10px 10px;
     border-radius: 12px;
     margin: 0 auto 15px;
+    /* Quando colocamos três valores no atributo "margin", esses valores funcionam na seguinte ordem: [top], [left e right] e [bottom]. */
     width: 35%;
 }
 
@@ -231,7 +237,7 @@ só que para esse, no lugar de padding, vamos usar margin */
     text-decoration: underline;    
 }
 
-/* Finalizamos o nosso CSS com o rodapé. Aqui nós centralizamos o conteúdo e definimos um espaçamento em relação à úlima seção. */
+/* Finalizamos o nosso CSS com o rodapé. Aqui nós centralizamos o conteúdo e definimos um espaçamento de 40px em relação à seção descubra. */
 
 #rodape {
     text-align: center;
